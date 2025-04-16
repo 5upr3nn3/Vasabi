@@ -4,12 +4,11 @@
 
 ## Purpose
 
-This app is designed for benchmarking and evaluating DAST (Dynamic Application Security Testing) tools such as OWASP ZAP. It includes:
+This app is designed for benchmarking and evaluating DAST. It includes:
 - **Real, intentionally introduced vulnerabilities** (e.g., SQL Injection, XSS, Command Injection, etc.)
 - **Carefully crafted false positives** (endpoints that appear vulnerable to scanners but are implemented securely)
 
 ## Features
-- Full list of vulnerabilities and false positives in `vulnerabilities_list.txt`
 - Per-request and per-response logging for benchmarking and scanner correlation (see `benchmark.log`)
 - Standardized response header (`X-Benchmark-Endpoint`) for endpoint correlation
 - `/log-scanner-result` endpoint for scanner result integration (writes to `scanner_results.log`)
