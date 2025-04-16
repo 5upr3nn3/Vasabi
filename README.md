@@ -25,15 +25,8 @@ This app is designed for benchmarking and evaluating DAST (Dynamic Application S
    python app.py
    ```
 3. **Browse endpoints:**
-   Visit [http://localhost:5000/](http://localhost:5000/) and try the various routes (see `vulnerabilities_list.txt`).
+   Visit [http://localhost:5000/](http://localhost:5000/) and try the various routes.
 
-## Benchmarking & Logging
-- All HTTP requests and responses are logged to `benchmark.log` in JSON-lines format, including:
-  - Request method, URL, headers, parameters, body
-  - Response status, headers, body
-  - Endpoint vulnerability label
-- DAST scanner results can be POSTed as JSON to `/log-scanner-result` (see `scanner_results.log`)
-- Each response includes a header `X-Benchmark-Endpoint` with the endpoint and its vulnerability label
 
 ## Files
 - `app.py` — Main Flask app with all endpoints
