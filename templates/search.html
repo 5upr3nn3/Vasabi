@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>SQL Injection Demo</h2>
+<form method="get">
+  <input name="q" placeholder="username">
+  <button type="submit">Search</button>
+</form>
+<p>Query: <code>{{ query }}</code></p>
+<ul>
+  {% for row in results %}<li>{{ row }}</li>{% endfor %}
+</ul>
+{% endblock %}

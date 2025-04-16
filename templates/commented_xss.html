@@ -1,0 +1,6 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Commented-Out XSS (False Positive)</h2>
+<!-- <script>alert('xss')</script> -->
+<p>This page contains a commented-out script tag.</p>
+{% endblock %}

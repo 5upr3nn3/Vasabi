@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Upload Dummy (File Upload False Positive)</h2>
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <button type="submit">Upload</button>
+</form>
+<p>{{ msg }}</p>
+{% endblock %}

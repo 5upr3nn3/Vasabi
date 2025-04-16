@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Safe Echo (False Positive XSS)</h2>
+<form method="get">
+  <input name="input" placeholder="Say something">
+  <button type="submit">Echo</button>
+</form>
+<pre>{{ user_input|e }}</pre>
+{% endblock %}

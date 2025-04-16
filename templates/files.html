@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Directory Traversal Demo</h2>
+<form method="get">
+  <input name="path" placeholder="File path">
+  <button type="submit">Read</button>
+</form>
+<p>Path: <code>{{ path }}</code></p>
+<pre>{{ content }}</pre>
+{% endblock %}

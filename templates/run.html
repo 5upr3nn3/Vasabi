@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Command Injection Demo</h2>
+<form method="post">
+  <input name="cmd" placeholder="Command">
+  <button type="submit">Run</button>
+</form>
+<pre>{{ output }}</pre>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Simulated Form (CSRF False Positive)</h2>
+<form method="post">
+  <input name="dummy" placeholder="Anything">
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

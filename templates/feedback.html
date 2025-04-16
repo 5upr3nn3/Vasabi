@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>XSS Demo</h2>
+<form method="post">
+  <input name="msg" placeholder="Type anything">
+  <button type="submit">Send</button>
+</form>
+{% if msg %}<p>Feedback: {{ msg|safe }}</p>{% endif %}
+{% endblock %}
